@@ -1,20 +1,27 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import HomePage from './screens/HomePage'
 export default function App() {
+
+  const buttonClickedHandler = () => {
+    console.log('You have been clicked a button!');
+    // do something
+  };
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
       <StatusBar style="auto" />
+      <HomePage />
     </View>
   );
 }
 
+// Styles
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    padding: 10,
+    marginTop: 10,
+  }
 });
