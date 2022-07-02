@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { Text, View, Image } from "react-native";
 import { DataTable } from "react-native-paper";
 import { StyleSheet } from "react-native";
 
@@ -7,25 +7,125 @@ const TransactionTable = () => {
   return (
     <DataTable style={styles.container}>
       <DataTable.Row>
-        <DataTable.Cell>Radhika</DataTable.Cell>
-        <DataTable.Cell>Dosa</DataTable.Cell>
-        <DataTable.Cell>23</DataTable.Cell>
+        <DataTable.Cell>
+          <Image
+            style={styles.tinyLogo}
+            source={require("../../assets/profile.png")}
+          />
+        </DataTable.Cell>
+        <DataTable.Cell>
+          <View
+            style={{
+              flex: 1,
+              flexDirection: "column",
+            }}
+          >
+            <Text>Khalid Aqeeli</Text>
+            <Text>8:00 pm . The Roof Vox cinema</Text>
+          </View>
+        </DataTable.Cell>
+        <DataTable.Cell>+ USD 23.59</DataTable.Cell>
       </DataTable.Row>
 
       <DataTable.Row>
-        <DataTable.Cell>Krishna</DataTable.Cell>
-        <DataTable.Cell>Uttapam</DataTable.Cell>
-        <DataTable.Cell>26</DataTable.Cell>
+        <DataTable.Cell>
+          <Image
+            style={styles.tinyLogo}
+            source={require("../../assets/profile.png")}
+          />
+        </DataTable.Cell>
+        <DataTable.Cell>
+          <View
+            style={{
+              flex: 1,
+              flexDirection: "column",
+            }}
+          >
+            <Text>Khalid Aqeeli</Text>
+            <Text>8:00 pm . The Roof Vox cinema</Text>
+          </View>
+        </DataTable.Cell>
+        <DataTable.Cell>+ USD 23.59</DataTable.Cell>
       </DataTable.Row>
       <DataTable.Row>
-        <DataTable.Cell>Vanshika</DataTable.Cell>
-        <DataTable.Cell>Brownie</DataTable.Cell>
-        <DataTable.Cell>20</DataTable.Cell>
+        <DataTable.Cell>
+          <Image
+            style={styles.tinyLogo}
+            source={require("../../assets/profile.png")}
+          />
+        </DataTable.Cell>
+        <DataTable.Cell>
+          <View
+            style={{
+              flex: 1,
+              flexDirection: "column",
+            }}
+          >
+            <Text>Khalid Aqeeli</Text>
+            <Text>8:00 pm . The Roof Vox cinema</Text>
+          </View>
+        </DataTable.Cell>
+        <DataTable.Cell>+ USD 23.59</DataTable.Cell>
       </DataTable.Row>
       <DataTable.Row>
-        <DataTable.Cell>Teena</DataTable.Cell>
-        <DataTable.Cell>Pizza</DataTable.Cell>
-        <DataTable.Cell>24</DataTable.Cell>
+        <DataTable.Cell>
+          <Image
+            style={styles.tinyLogo}
+            source={require("../../assets/profile.png")}
+          />
+        </DataTable.Cell>
+        <DataTable.Cell>
+          <View
+            style={{
+              flex: 1,
+              flexDirection: "column",
+            }}
+          >
+            <Text>Khalid Aqeeli</Text>
+            <Text>8:00 pm . The Roof Vox cinema</Text>
+          </View>
+        </DataTable.Cell>
+        <DataTable.Cell>+ USD 23.59</DataTable.Cell>
+      </DataTable.Row>
+      <DataTable.Row>
+        <DataTable.Cell>
+          <Image
+            style={styles.tinyLogo}
+            source={require("../../assets/profile.png")}
+          />
+        </DataTable.Cell>
+        <DataTable.Cell>
+          <View
+            style={{
+              flex: 1,
+              flexDirection: "column",
+            }}
+          >
+            <Text>Khalid Aqeeli</Text>
+            <Text>8:00 pm . The Roof Vox cinema</Text>
+          </View>
+        </DataTable.Cell>
+        <DataTable.Cell>+ USD 23.59</DataTable.Cell>
+      </DataTable.Row>
+      <DataTable.Row>
+        <DataTable.Cell>
+          <Image
+            style={styles.tinyLogo}
+            source={require("../../assets/profile.png")}
+          />
+        </DataTable.Cell>
+        <DataTable.Cell>
+          <View
+            style={{
+              flex: 1,
+              flexDirection: "column",
+            }}
+          >
+            <Text>Khalid Aqeeli</Text>
+            <Text>8:00 pm . The Roof Vox cinema</Text>
+          </View>
+        </DataTable.Cell>
+        <DataTable.Cell>+ USD 23.59</DataTable.Cell>
       </DataTable.Row>
     </DataTable>
   );
@@ -33,7 +133,11 @@ const TransactionTable = () => {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 15,
+    margin: 10,
+  },
+  tinyLogo: {
+    width: 40,
+    height: 40,
   },
 });
 
