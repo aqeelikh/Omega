@@ -5,8 +5,8 @@ const CardList = () => {
  
   return (
     <ScrollView showsHorizontalScrollIndicator={false} horizontal={true}>
-      <Card name="Huda Alsharfi" cardNumber="5430 4900 3232 9755"/>
-      <Card name="Khalid Aqeeli" cardNumber="1430 2800 1555 9292"/>
+      <Card name="Huda Alsharfi" cardNumber="5430 4900 3232 9755" isVisa={false} />
+      <Card name="Khalid Aqeeli" cardNumber="1430 2800 1555 9292" isVisa={true}/>
     </ScrollView>
   );
 };

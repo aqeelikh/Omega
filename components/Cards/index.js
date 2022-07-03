@@ -9,6 +9,7 @@ import Svg, {
   TSpan,
   Defs,
   LinearGradient,
+  RadialGradient,
   Stop,
 } from "react-native-svg"
 
@@ -21,7 +22,7 @@ const Card = (props) => {
   };
   return (
     <View style={styles.card}>
-      <Svg
+      { props.isVisa ? <Svg
         width={321}
         height={192}
         fill="none"
@@ -125,7 +126,102 @@ const Card = (props) => {
             <Stop offset={1} stopColor="#1D1D1D" stopOpacity={0.76} />
           </LinearGradient>
         </Defs>
-      </Svg>
+      </Svg> : <Svg
+    width={320}
+    height={191}
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <Rect width={319.316} height={190.036} rx={23} fill="url(#a)" />
+    <Circle
+      opacity={0.36}
+      cx={289.645}
+      cy={154.713}
+      r={12.716}
+      fill="#1F5573"
+    />
+    <Circle cx={274.103} cy={154.713} r={12.716} fill="#E9031D" />
+    <Text
+      fill="#fff"
+      xmlSpace="preserve"
+      style={{
+        whiteSpace: "pre",
+      }}
+      fontFamily="Poppins"
+      fontSize={18}
+      fontWeight={500}
+      letterSpacing={0}
+    >
+      <TSpan x={18.368} y={91.858}>
+        {"5430 4900 3232 9755"}
+      </TSpan>
+    </Text>
+    <Text
+      fill="#fff"
+      xmlSpace="preserve"
+      style={{
+        whiteSpace: "pre",
+      }}
+      fontFamily="Poppins"
+      fontSize={12}
+      letterSpacing={0}
+    >
+      <TSpan x={18.368} y={150.958}>
+        {"Khalid Aqeeli"}
+      </TSpan>
+    </Text>
+    <Text
+      fill="#fff"
+      xmlSpace="preserve"
+      style={{
+        whiteSpace: "pre",
+      }}
+      fontFamily="Poppins"
+      fontSize={12}
+      letterSpacing={0}
+    >
+      <TSpan x={193.568} y={169.326}>
+        {"11/11/24"}
+      </TSpan>
+    </Text>
+    <Text
+      fill="#fff"
+      xmlSpace="preserve"
+      style={{
+        whiteSpace: "pre",
+      }}
+      fontFamily="Poppins"
+      fontSize={10}
+      fontWeight={500}
+      letterSpacing={0}
+    >
+      <TSpan x={193.568} y={152.997}>
+        {"Vaild date"}
+      </TSpan>
+    </Text>
+    <Rect
+      x={9}
+      y={134}
+      width={96}
+      height={23}
+      rx={11.5}
+      fill="#CACACA"
+      fillOpacity={0.14}
+    />
+    <Defs>
+      <RadialGradient
+        id="a"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientUnits="userSpaceOnUse"
+        gradientTransform="matrix(-154.71284 93.25143 -156.69016 -259.96362 156.832 95.371)"
+      >
+        <Stop stopColor="#1BAC2A" />
+        <Stop offset={1} stopColor="#68DBF4" stopOpacity={0.76} />
+      </RadialGradient>
+    </Defs>
+  </Svg> }
     </View>
   );
 };
