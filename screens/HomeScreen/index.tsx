@@ -85,7 +85,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#fff",
     padding: 10,
-    marginTop: 50,
   },
   containerScrollView: {
     marginTop: 60,
@@ -94,6 +93,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "row",
     justifyContent: "space-between",
+    marginTop: 50,
     marginBottom: 20,
   },
   tinyLogo: {
