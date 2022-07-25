@@ -73,7 +73,7 @@ const HomeScreen = (navigation: any) => {
             <Text>More</Text>
           </TouchableOpacity>
         </View>
-        <Transaction navigation={navigation}/>
+        <Transaction />
       </ScrollView>
     </View>
   );
