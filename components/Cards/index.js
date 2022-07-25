@@ -61,7 +61,7 @@ const Card = (props) => {
           style={{
             whiteSpace: "pre",
           }}
-          fontFamily="Poppins"
+          fontFamily="Al Nile"
           fontSize={18}
           fontWeight={500}
           letterSpacing={0}
@@ -76,7 +76,7 @@ const Card = (props) => {
           style={{
             whiteSpace: "pre",
           }}
-          fontFamily="Poppins"
+          fontFamily="Al Nile"
           fontSize={12}
           letterSpacing={0}
         >
@@ -90,7 +90,7 @@ const Card = (props) => {
           style={{
             whiteSpace: "pre",
           }}
-          fontFamily="Poppins"
+          fontFamily="Al Nile"
           fontSize={12}
           letterSpacing={0}
         >
@@ -104,7 +104,7 @@ const Card = (props) => {
           style={{
             whiteSpace: "pre",
           }}
-          fontFamily="Poppins"
+          fontFamily="Al Nile"
           fontSize={10}
           fontWeight={500}
           letterSpacing={0}
@@ -147,7 +147,7 @@ const Card = (props) => {
       style={{
         whiteSpace: "pre",
       }}
-      fontFamily="Poppins"
+      fontFamily="Al Nile"
       fontSize={18}
       fontWeight={500}
       letterSpacing={0}
@@ -162,7 +162,7 @@ const Card = (props) => {
       style={{
         whiteSpace: "pre",
       }}
-      fontFamily="Poppins"
+      fontFamily="Al Nile"
       fontSize={12}
       letterSpacing={0}
     >
@@ -176,7 +176,7 @@ const Card = (props) => {
       style={{
         whiteSpace: "pre",
       }}
-      fontFamily="Poppins"
+      fontFamily="Al Nile"
       fontSize={12}
       letterSpacing={0}
     >
@@ -190,7 +190,7 @@ const Card = (props) => {
       style={{
         whiteSpace: "pre",
       }}
-      fontFamily="Poppins"
+      fontFamily="Al Nile"
       fontSize={10}
       fontWeight={500}
       letterSpacing={0}
