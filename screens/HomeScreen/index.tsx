@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "row",
     justifyContent: "space-between",
-    marginTop: 50,
+    paddingTop: 50,
     marginBottom: 20,
   },
   tinyLogo: {
