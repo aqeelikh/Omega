@@ -10,17 +10,20 @@ import {
 import { StatusBar } from 'expo-status-bar';
 import Transaction from "../../components/Transaction";
 import CardList from "../../components/CardList";
+import { useNavigation } from '@react-navigation/native';
 
-const HomeScreen = (navigation: any) => {
+const HomeScreen = () => {
   const buttonClickedHandler = () => {
     console.log("You have been clicked a button!");
     // do something
   };
 
+  const navigation = useNavigation();
+
   return (
 
     <View style={styles.container}>
-      <StatusBar style="auto"/>
+      <StatusBar style="auto" />
       <View style={styles.pageHeader}>
         <TouchableOpacity onPress={buttonClickedHandler}>
           <Image
@@ -46,7 +49,7 @@ const HomeScreen = (navigation: any) => {
           </TouchableOpacity>
 
           <TouchableOpacity
-            onPress={buttonClickedHandler}
+            onPress={() => navigation.navigate('Send')}
             style={styles.roundButton1}
           >
             <Text>send</Text>

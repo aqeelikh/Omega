@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import HomePage from '../HomeScreen';
+import HomePage from '../Home';
 import {
   LineChart,
   BarChart,
