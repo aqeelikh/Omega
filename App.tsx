@@ -1,13 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
-import HomePage from './screens/HomePage'
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import HomeScreen from './screens/HomeScreen';
+import TransactionsScreen from './screens/TransactionsPage'
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+
 export default function App() {
+  const Stack = createNativeStackNavigator();
+
 
   return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-      <HomePage />
-    </View>
+    <NavigationContainer>
+    <Stack.Navigator>
+      <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen 
+      name="TransactionPage" 
+      component={TransactionsScreen} 
+      />
+    </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 

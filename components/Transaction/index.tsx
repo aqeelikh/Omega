@@ -1,8 +1,13 @@
-import React from "react";
-import { Text, View, TouchableOpacity } from "react-native";
+import Reac from "react";
+import { Text, View, Alert, TouchableOpacity } from "react-native";
 import TransactionTable from "../TransactionTable";
+import { useNavigation } from '@react-navigation/native';
+
 
 const Transaction = () => {
+
+  const navigation = useNavigation();
+
   return (
     <View
       style={{
@@ -26,7 +31,9 @@ const Transaction = () => {
         >
           Transaction
         </Text>
-        <TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('TransactionPage')}
+        >
           <Text
             style={{
               fontSize: 14,

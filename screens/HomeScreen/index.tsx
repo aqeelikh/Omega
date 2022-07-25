@@ -7,16 +7,20 @@ import {
   ScrollView,
   Image,
 } from "react-native";
+import { StatusBar } from 'expo-status-bar';
 import Transaction from "../../components/Transaction";
 import CardList from "../../components/CardList";
-const HomePage = () => {
+
+const HomeScreen = (navigation: any) => {
   const buttonClickedHandler = () => {
     console.log("You have been clicked a button!");
     // do something
   };
 
   return (
+
     <View style={styles.container}>
+      <StatusBar style="auto" />
       <View style={styles.pageHeader}>
         <TouchableOpacity onPress={buttonClickedHandler}>
           <Image
@@ -69,7 +73,7 @@ const HomePage = () => {
             <Text>More</Text>
           </TouchableOpacity>
         </View>
-        <Transaction />
+        <Transaction navigation={navigation}/>
       </ScrollView>
     </View>
   );
@@ -122,4 +126,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomePage;
+export default HomeScreen;
