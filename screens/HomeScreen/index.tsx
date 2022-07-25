@@ -20,7 +20,7 @@ const HomeScreen = (navigation: any) => {
   return (
 
     <View style={styles.container}>
-      <StatusBar style="auto" />
+      <StatusBar style="auto"/>
       <View style={styles.pageHeader}>
         <TouchableOpacity onPress={buttonClickedHandler}>
           <Image

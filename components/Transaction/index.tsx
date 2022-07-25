@@ -32,7 +32,7 @@ const Transaction = () => {
           Transaction
         </Text>
         <TouchableOpacity
-          onPress={() => navigation.navigate('TransactionPage')}
+          onPress={() => navigation.navigate('Transaction Page')}
         >
           <Text
             style={{
